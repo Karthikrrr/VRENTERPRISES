@@ -20,11 +20,15 @@
             }
         }
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 </head>
 
 <body class="font-lato">
-    <header class="sticky top-0 z-50 bg-white shadow-md py-6">
+    <header class="sticky top-0 z-50 bg-white shadow-md py-6" data-aos="fade-up"
+    data-aos-duration="000">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center">
                 <!-- Name -->
@@ -81,7 +85,8 @@
 
 
     <!-- Hero Section -->
-    <section class="bg-gray-100 py-16 md:py-24"
+    <section data-aos="fade-up"
+    data-aos-duration="2000" class="bg-gray-100 py-16 md:py-24"
         style="background-image: url('images/hero-bg.jpg'); background-size: cover; background-position: center;">
         <div class="container mx-auto px-4">
             <div class="flex flex-wrap -mx-4 items-center">
@@ -127,7 +132,8 @@
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center text-center md:text-left">
                 <!-- Left Content -->
-                <div class="flex flex-col items-center md:items-start">
+                <div class="flex flex-col items-center md:items-start" data-aos="fade-up"
+                data-aos-duration="2000">
                     <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
                         Thousands Of Customers Trust Our Company
                     </h2>
@@ -157,7 +163,8 @@
                 </div>
 
                 <!-- Right Image -->
-                <div class="flex justify-center">
+                <div class="flex justify-center" data-aos="fade-up"
+                data-aos-duration="1000">
                     <img src="images/home-about.jpg" alt="About Us" class="rounded-lg shadow-xl w-full max-w-lg">
                 </div>
             </div>
@@ -171,128 +178,83 @@
             <!-- Title -->
             <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Discover all the loans for you</h2>
-                <p class="text-gray-600">If you try to cut corners on your brochure you will end up spending more money
-                </p>
+                <p class="text-gray-600">If you try to cut corners on your brochure you will end up spending more money.</p>
             </div>
-
+    
             <!-- Loan Cards Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 <!-- Loan Card -->
-                <div class="relative group overflow-hidden">
+                <div class="relative group overflow-hidden" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000">
                     <a href="https://wa.me/7795163330?text=Need Personal Loan">
-
-                    <img src="images/ls-1.jpg" alt="Personal Loan"
-                        class="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-105">
-                    <div
-                        class="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-70">
-                    </div>
-
-                    <!-- Always Visible Loan Name -->
-                    <div class="absolute top-4 left-4 text-white font-semibold text-lg">
-                        <span class="text-green-400 font-bold">01.</span> Personal Loan
-                    </div>
-
-                    <!-- Appears on Hover -->
-                    <div
-                        class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition duration-300">
-                        <p class="text-sm">But that's not the kind of attention you want, is it?</p>
-                        <a href="#" class="mt-2 inline-block text-white font-semibold border-b border-white">Find Out
-                            More</a>
-                    </div>
+                        <img src="images/ls-1.jpg" alt="Personal Loan"
+                            class="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-70"></div>
+                        <div class="absolute top-4 left-4 text-white font-semibold text-lg">
+                            <span class="text-green-400 font-bold">01.</span> New Car Loan
+                        </div>
+                        <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition duration-300">
+                            <p class="text-sm">But that's not the kind of attention you want, is it?</p>
+                            <a href="#" class="mt-2 inline-block text-white font-semibold border-b border-white">Find Out More</a>
+                        </div>
                     </a>
                 </div>
-
-                <!-- Repeat for other loan services -->
-                <div class="relative group overflow-hidden">
+    
+                <div class="relative group overflow-hidden" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                     <a href="https://wa.me/7795163330?text=Need Business Loan">
-
-                    <img src="images/ls-2.jpg" alt="Business Loan"
-                        class="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-105">
-                    <div
-                        class="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-70">
-                    </div>
-
-                    <div class="absolute top-4 left-4 text-white font-semibold text-lg">
-                        <span class="text-green-500 font-bold">02.</span> Business Loan
-                    </div>
-
-                    <div
-                        class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition duration-300">
-                        <p class="text-sm">But that's not the kind of attention you want, is it?</p>
-                        <a href="#" class="mt-2 inline-block text-white font-semibold border-b border-white">Find Out
-                            More</a>
-                    </div>
+                        <img src="images/ls-2.jpg" alt="Business Loan"
+                            class="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-70"></div>
+                        <div class="absolute top-4 left-4 text-white font-semibold text-lg">
+                            <span class="text-green-400 font-bold">02.</span> Business Loan
+                        </div>
+                        <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition duration-300">
+                            <p class="text-sm">But that's not the kind of attention you want, is it?</p>
+                            <a href="#" class="mt-2 inline-block text-white font-semibold border-b border-white">Find Out More</a>
+                        </div>
                     </a>
                 </div>
-
-                <div class="relative group overflow-hidden">
+    
+                <div class="relative group overflow-hidden" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2500">
                     <a href="https://wa.me/7795163330?text=Need Education Loan">
-
-                    <img src="images/ls-3.jpg" alt="Education Loan"
-                        class="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-105">
-                    <div
-                        class="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-70">
-                    </div>
-
-                    <div class="absolute top-4 left-4 text-white font-semibold text-lg">
-                        <span class="text-green-400 font-bold">03.</span> Education Loan
-                    </div>
-
-                    <div
-                        class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition duration-300">
-                        <p class="text-sm">But that's not the kind of attention you want, is it?</p>
-                        <a href="#" class="mt-2 inline-block text-white font-semibold border-b border-white">Find Out
-                            More</a>
-                    </div>
+                        <img src="images/ls-3.jpg" alt="Education Loan"
+                            class="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 transition duration-300 grousp-hover:bg-opacity-70"></div>
+                        <div class="absolute top-4 left-4 text-white font-semibold text-lg">
+                            <span class="text-green-400 font-bold">03.</span> Personal Loan
+                        </div>
+                        <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition duration-300">
+                            <p class="text-sm">But that's not the kind of attention you want, is it?</p>
+                            <a href="#" class="mt-2 inline-block text-white font-semibold border-b border-white">Find Out More</a>
+                        </div>
                     </a>
                 </div>
-
-                <div class="relative group overflow-hidden">
+    
+                <div class="relative group overflow-hidden" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="3000">
                     <a href="https://wa.me/7795163330?text=Need Personal Car Loan">
-                    <img src="images/ls-4.jpg" alt="Commercial Loan"
-                        class="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-105">
-                    <div
-                        class="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-70">
-                    </div>
-
-                    <div class="absolute top-4 left-4 text-white font-semibold text-lg">
-                        <span class="text-green-400 font-bold">04.</span> Personal Car Loan
-                    </div>
-
-                    <div
-                        class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition duration-300">
-                        <p class="text-sm">But that's not the kind of attention you want, is it?</p>
-                        <a href="#" class="mt-2 inline-block text-white font-semibold border-b border-white">Find Out
-                            More</a>
-                    </div>
-                </a>
-                </div>
-
-                <div class="relative group overflow-hidden">
-                    <a href="https://wa.me/7795163330?text=Need Health Loan">
-
-                    <img src="images/ls-5.jpg" alt="Health Loan"
-                        class="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-105">
-                    <div
-                        class="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-70">
-                    </div>
-
-                    <div class="absolute top-4 left-4 text-white font-semibold text-lg">
-                        <span class="text-green-400 font-bold">05.</span> Health Loan
-                    </div>
-
-                    <div
-                        class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition duration-300">
-                        <p class="text-sm">But that's not the kind of attention you want, is it?</p>
-                        <a href="#" class="mt-2 inline-block text-white font-semibold border-b border-white">Find Out
-                            More</a>
-                    </div>
+                        <img src="images/ls-4.jpg" alt="Used Car Loan"
+                            class="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-70"></div>
+                        <div class="absolute top-4 left-4 text-white font-semibold text-lg">
+                            <span class="text-green-400 font-bold">04.</span> Used Car Loan
+                        </div>
+                        <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition duration-300">
+                            <p class="text-sm">But that's not the kind of attention you want, is it?</p>
+                            <a href="#" class="mt-2 inline-block text-white font-semibold border-b border-white">Find Out More</a>
+                        </div>
                     </a>
                 </div>
-
             </div>
         </div>
     </section>
+    
 
 
 
@@ -306,7 +268,7 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                 <!-- Card 1 -->
-                <div class="bg-white shadow-lg rounded-xl p-8 text-center">
+                <div class="bg-white shadow-lg rounded-xl p-8 text-center" data-aos="zoom-out-down" data-aos-duration="900">
                     <div class="flex justify-center">
                         <img src="images/choose-1.png" alt="Icon" class="w-20 h-20">
                     </div>
@@ -315,7 +277,7 @@
                         strong that it can</p>
                 </div>
                 <!-- Card 2 -->
-                <div class="bg-white shadow-lg rounded-xl p-8 text-center">
+                <div class="bg-white shadow-lg rounded-xl p-8 text-center" data-aos="zoom-out-down" data-aos-duration="1300">
                     <div class="flex justify-center">
                         <img src="images/choose-2.png" alt="Icon" class="w-20 h-20">
                     </div>
@@ -324,7 +286,7 @@
                         strong that it can</p>
                 </div>
                 <!-- Card 3 -->
-                <div class="bg-white shadow-lg rounded-xl p-8 text-center">
+                <div class="bg-white shadow-lg rounded-xl p-8 text-center" data-aos="zoom-out-down" data-aos-duration="1800">
                     <div class="flex justify-center">
                         <img src="images/choose-3.png" alt="Icon" class="w-20 h-20">
                     </div>
@@ -333,7 +295,7 @@
                         strong that it can</p>
                 </div>
                 <!-- Card 4 -->
-                <div class="bg-white shadow-lg rounded-xl p-8 text-center">
+                <div class="bg-white shadow-lg rounded-xl p-8 text-center" data-aos="zoom-out-down" data-aos-duration="2200">
                     <div class="flex justify-center">
                         <img src="images/choose-4.png" alt="Icon" class="w-20 h-20">
                     </div>
@@ -342,7 +304,7 @@
                         strong that it can</p>
                 </div>
                 <!-- Card 5 -->
-                <div class="bg-white shadow-lg rounded-xl p-8 text-center">
+                <div class="bg-white shadow-lg rounded-xl p-8 text-center" data-aos="zoom-out-down" data-aos-duration="2500">
                     <div class="flex justify-center">
                         <img src="images/choose-5.png" alt="Icon" class="w-20 h-20">
                     </div>
@@ -351,7 +313,7 @@
                         strong that it can</p>
                 </div>
                 <!-- Card 6 -->
-                <div class="bg-white shadow-lg rounded-xl p-8 text-center">
+                <div class="bg-white shadow-lg rounded-xl p-8 text-center" data-aos="zoom-out-down" data-aos-duration="2800">
                     <div class="flex justify-center">
                         <img src="images/choose-6.png" alt="Icon" class="w-20 h-20">
                     </div>
@@ -366,20 +328,20 @@
 
 
     <section class="py-16 md:py-24">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-4" >
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="text-center">
+                <div class="text-center" data-aos="zoom-in" data-aos-duration="1000">
                     <img src="images/counter-1.png" alt="Successful Loan Approval" class="mx-auto mb-4">
                     <h2 class="text-4xl font-bold mb-2">2100</h2>
                     <p class="text-gray-600">Successful Loan Approval</p>
                 </div>
                 <!-- Repeat for other counters -->
-                <div class="text-center">
+                <div class="text-center" data-aos="zoom-in" data-aos-duration="1500">
                     <img src="images/counter-2.png" alt="Successful Loan Approval" class="mx-auto mb-4">
                     <h2 class="text-4xl font-bold mb-2">100 %</h2>
                     <p class="text-gray-600">Customer Satisfection</p>
                 </div>
-                <div class="text-center">
+                <div class="text-center" data-aos="zoom-in" data-aos-duration="1800">
                     <img src="images/counter-3.png" alt="Successful Loan Approval" class="mx-auto mb-4">
                     <h2 class="text-4xl font-bold mb-2">90 +</h2>
                     <p class="text-gray-600">Office National Partners</p>
@@ -392,7 +354,7 @@
     <!-- Call Section -->
     <section class="bg-gray-100 py-20 md:py-28 flex items-center justify-center text-center"
         style="background-image: url('images/call-bg.jpg'); background-size: cover; background-position: center;">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-4" data-aos="zoom-in-down" data-aos-duration="1200">
             <div class="max-w-2xl mx-auto">
                 <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">Request A Call Back</h2>
                 <p class="text-lg md:text-xl text-gray-200 mb-8">
@@ -436,22 +398,22 @@
                 <div class="flex flex-col mb-10">
                     <!-- First Row -->
                     <div class="grid md:grid-cols-12 gap-8 lg:mb-11 mb-7">
-                        <div class="md:col-span-4 md:h-[404px] h-[277px] w-full rounded-3xl">
+                        <div class="md:col-span-4 md:h-[404px] h-[277px] w-full rounded-3xl" data-aos="fade-up" data-aos-duration="1000">
                             <img src="images/place1.jpeg" alt="Gallery image"
                                 class="gallery-image object-cover rounded-3xl hover:grayscale transition-all duration-700 ease-in-out mx-auto lg:col-span-4 md:col-span-6 w-full h-full">
                         </div>
-                        <div class="md:col-span-8 md:h-[404px] h-[277px] w-full rounded-3xl">
+                        <div class="md:col-span-8 md:h-[404px] h-[277px] w-full rounded-3xl" data-aos="fade-up" data-aos-duration="1200">
                             <img src="images/place2.jpeg" alt="Gallery image"
                                 class="gallery-image object-cover rounded-3xl hover:grayscale transition-all duration-700 ease-in-out mx-auto lg:col-span-8 md:col-span-6 w-full h-full">
                         </div>
                     </div>
 
                       <div class="grid md:grid-cols-12 gap-8 lg:mb-11 mb-7">
-                        <div class="md:col-span-8 md:h-[404px] h-[277px] w-full rounded-3xl">
+                        <div class="md:col-span-8 md:h-[404px] h-[277px] w-full rounded-3xl" data-aos="fade-up" data-aos-duration="1400">
                             <img src="images/man.jpeg" alt="Gallery image"
                                 class="gallery-image object-cover rounded-3xl hover:grayscale transition-all duration-700 ease-in-out mx-auto lg:col-span-8 md:col-span-6 w-full h-full">
                         </div>
-                        <div class="md:col-span-4 md:h-[404px] h-[277px] w-full rounded-3xl">
+                        <div class="md:col-span-4 md:h-[404px] h-[277px] w-full rounded-3xl" data-aos="fade-up" data-aos-duration="1600">
                             <img src="images/serv.jpeg" alt="Gallery image"
                                 class="gallery-image object-cover rounded-3xl hover:grayscale transition-all duration-700 ease-in-out mx-auto lg:col-span-4 md:col-span-6 w-full h-full">
                         </div>
@@ -531,10 +493,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     <!-- Footer Section -->
-    <footer class="bg-gray-800 text-white py-16">
+    <footer class="bg-gray-800 text-white py-16" >
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
-                <div>
+                <div data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="text-3xl font-bold mb-4">V R ENTERPRISES</h2>
                     <h3 class="text-2xl font-bold mb-4">Proprietor : Rakesh p</h3>
                     <p class="text-2xl" ><a href="tel:7795163330">call me : 7795163330</a>
@@ -542,7 +504,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <p class="text-gray-400 text-lg">Please remember though that how far you go is up to you. There is no
                         substitute for your own work and effort in succeeding in this business.</p>
                 </div>
-                <div>
+                <div data-aos="fade-up" data-aos-duration="1400">
                     <h5 class="text-2xl font-semibold mb-6">Services</h5>
                     <ul class="space-y-3 text-lg">
                         <li><a href="#services" class="text-gray-400 hover:text-white">Personal Loans</a></li>
@@ -551,7 +513,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <li><a href="#services" class="text-gray-400 hover:text-white">Cash Advance</a></li>
                     </ul>
                 </div>
-                <div>
+                <div data-aos="fade-up" data-aos-duration="1600">
                     <h5 class="text-2xl font-semibold mb-6">Socials</h5>
                     <ul class="space-y-3 text-lg">
                         <li><a href="#" class="text-gray-400 hover:text-white">Facebook</a></li>
@@ -560,7 +522,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <li><a href="https://wa.me/7795163330?text=Need Loan For " class="text-gray-400 hover:text-white">WhatsApp</a></li>
                     </ul>
                 </div>
-                <div>
+                <div data-aos="fade-up" data-aos-duration="1800">
                     <h5 class="text-2xl font-semibold mb-6">Open Hours</h5>
                     <p class="text-gray-400 text-lg mb-4">We work all days a week. Please contact us for any inquiry.</p>
                     <ul class="text-gray-400 space-y-2 text-lg">
@@ -582,6 +544,9 @@ document.addEventListener("DOMContentLoaded", function () {
     </footer>
     
     <script src="/js/main.js"></script>
+    <script>
+  AOS.init();
+</script>
 </body>
 
 </html>
